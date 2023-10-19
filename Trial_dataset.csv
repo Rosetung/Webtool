@@ -1,0 +1,31 @@
+﻿Condition,Infection status,Sample,Freq of CD45 cells,MFI Avidin,Freq of CD63+ cells,Freq. of mast cells,Number of cells,Number of mast cells
+Control diet,Uninfected,Control diet_Tube_001.fcs,50,2000,2,0.14,2000000,280000
+Control diet,Uninfected,Control diet_Tube_002.fcs,40,3000,1,0.095,3000000,285000
+Control diet,Uninfected,Control diet_Tube_003.fcs,35,2400,2.3,0.11,2400000,264000
+Control diet,Uninfected,Control diet_Tube_004.fcs,45,2800,1.5,0.088,1800000,158400
+Control diet,Uninfected,Control diet_Tube_005.fcs,55,2750,4,0.12,1500000,180000
+High fat diet,Uninfected,High fat diet_Tube_001.fcs,60,3250,5,0.31,2500000,775000
+High fat diet,Uninfected,High fat diet_Tube_002.fcs,70,3500,3.5,0.32,3500000,1120000
+High fat diet,Uninfected,High fat diet_Tube_003.fcs,75,3400,3.3,0.29,3500000,1015000
+High fat diet,Uninfected,High fat diet_Tube_004.fcs,70,3300,4.2,0.15,2800000,420000
+High fat diet,Uninfected,High fat diet_Tube_005.fcs,65,3000,1.8,0.18,3200000,576000
+Keto diet,Uninfected,Keto diet_Tube_001.fcs,55,2800,3,0.25,1100000,275000
+Keto diet,Uninfected,Keto diet_Tube_002.fcs,45,2500,2,0.29,1200000,348000
+Keto diet,Uninfected,Keto diet_Tube_003.fcs,65,2700,3,0.4,1500000,600000
+Keto diet,Uninfected,Keto diet_Tube_004.fcs,35,2400,1.5,0.2,1700000,340000
+Keto diet,Uninfected,Keto diet_Tube_005.fcs,40,2300,2.3,0.3,1800000,540000
+Control diet,D1 post infection,Control diet_Tube_001.fcs,60,2400,2.4,0.168,2400000,336000
+Control diet,D1 post infection,Control diet_Tube_002.fcs,48,3600,1.2,0.114,3600000,342000
+Control diet,D1 post infection,Control diet_Tube_003.fcs,42,2880,2.76,0.132,2880000,316800
+Control diet,D1 post infection,Control diet_Tube_004.fcs,54,3360,1.8,0.1056,2160000,190080
+Control diet,D1 post infection,Control diet_Tube_005.fcs,66,3300,4.8,0.144,1800000,216000
+High fat diet,D1 post infection,High fat diet_Tube_001.fcs,72,3900,6,0.372,3000000,930000
+High fat diet,D1 post infection,High fat diet_Tube_002.fcs,84,4200,4.2,0.384,4200000,1344000
+High fat diet,D1 post infection,High fat diet_Tube_003.fcs,90,4080,3.96,0.348,4200000,1218000
+High fat diet,D1 post infection,High fat diet_Tube_004.fcs,84,3960,5.04,0.18,3360000,504000
+High fat diet,D1 post infection,High fat diet_Tube_005.fcs,78,3600,2.16,0.216,3840000,691200
+Keto diet,D1 post infection,Keto diet_Tube_001.fcs,66,3360,3.6,0.3,1320000,330000
+Keto diet,D1 post infection,Keto diet_Tube_002.fcs,54,3000,2.4,0.348,1440000,417600
+Keto diet,D1 post infection,Keto diet_Tube_003.fcs,78,3240,3.6,0.48,1800000,720000
+Keto diet,D1 post infection,Keto diet_Tube_004.fcs,42,2880,1.8,0.24,2040000,408000
+Keto diet,D1 post infection,Keto diet_Tube_005.fcs,48,2760,2.76,0.36,2160000,648000
