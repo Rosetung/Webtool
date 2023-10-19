@@ -41,7 +41,11 @@ if file is not None:
         sheet_selector = st.selectbox('Select which sheet to open:', wb.sheetnames)
         flow_df = pd.read_excel(file, sheet_selector)
 else:
-    st.stop()
+    agree = st.checkbox('Give it a try with trial dataset!')
+    if agree:
+        flow_df = pd.read_excel('https://github.com/Rosetung/Webtool/blob/main/Trial_dataset.xlsx')
+    else:
+        st.stop()
 
 st.markdown('**Flow data**')
 st.write(flow_df)
