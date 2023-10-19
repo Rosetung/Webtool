@@ -321,7 +321,7 @@ with tab3:
         with c3:
             st.markdown("Normality test")
             p = pg.qqplot(fsdf[quant], dist='norm')
-            st.pyplot(p)
+            st.pyplot(ggplot.draw(p))
             ddd = shapiro(fsdf[quant])[1]
             st.write("Shapiro p-Value: " + str(ddd))
             if ddd<0.05:
