@@ -43,7 +43,7 @@ if file is not None:
 else:
     agree = st.checkbox('Give it a try with trial dataset!')
     if agree:
-        flow_df = pd.read_csv('https://github.com/Rosetung/Webtool/blob/main/Trial_dataset.csv')
+        flow_df = pd.read_csv('https://github.com/Rosetung/Webtool/Trial_dataset.csv')
     else:
         st.stop()
 
