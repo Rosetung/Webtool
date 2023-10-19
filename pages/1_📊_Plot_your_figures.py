@@ -63,7 +63,7 @@ with tab1:
         subgrouplist = flow_df[subgroup_name]
 
     unique_values = flow_df.value_counts(group_name if subgroup_name == 'None' else [group_name, subgroup_name]).reset_index()
-    unique_values = unique_values.rename(columns={ 0: 'Count'})
+    unique_values = unique_values.rename(columns={ 0: 'count'})
 
     col1, col2 = st.columns([1, 2])
     with col1: 
@@ -72,7 +72,7 @@ with tab1:
 
     with col2:
         color_val = subgroup_name if subgroup_name != 'None' else None
-        groups_fig = px.bar(unique_values, x=group_name, y='Count',color=color_val)
+        groups_fig = px.bar(unique_values, x=group_name, y='count',color=color_val)
         st.plotly_chart(groups_fig)
 
     # Select your numerical parameters and your groups for display/plotting
