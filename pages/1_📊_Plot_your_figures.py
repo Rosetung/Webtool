@@ -290,7 +290,7 @@ with tab3:
             # st.dataframe(df.assign(hack='').set_index('hack')) 
             global numeric_columns
             global non_numeric_columns
-            numeric_columns = list(df.select_dtypes(['float', 'int']).columns)
+            numeric_columns = df.select_dtypes(include=np.number).columns.tolist()
             non_numeric_columns = list(df.select_dtypes(['object']).columns)
             
             quant = st.selectbox('Numerical variable', options=numeric_columns)
