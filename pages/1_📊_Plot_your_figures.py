@@ -45,7 +45,7 @@ else:
     if agree:
         url = 'https://github.com/Rosetung/Webtool/blob/main/Trial_dataset.xlsx'
         myfile = requests.get(url)
-        flow_df = pd.read_excel(myfile.content)
+        flow_df = pd.read_excel(myfile.content, engine = 'openpyxl')
     else:
         st.stop()
 
