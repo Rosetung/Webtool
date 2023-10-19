@@ -43,9 +43,7 @@ if file is not None:
 else:
     agree = st.checkbox('Give it a try with trial dataset!')
     if agree:
-        url = 'https://github.com/Rosetung/Webtool/blob/main/Trial_dataset.xlsx'
-        myfile = requests.get(url)
-        flow_df = pd.read_excel(myfile.content, engine = 'openpyxl')
+        flow_df = pd.read_excel('https://github.com/Rosetung/Webtool/blob/main/Trial_dataset.xlsx', engine_kwargs = 'openpyxl')
     else:
         st.stop()
 
