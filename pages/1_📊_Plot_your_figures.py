@@ -236,7 +236,7 @@ with tab2:
         st.button('Download Pairwise plot', on_click=downloadplot)
 
     else:
-        corr = flow_df.corr()
+        corr = flow_df[numerical_parameters].corr()
         with sns.axes_style("white"):
             f, ax = plt.subplots(figsize=(10, 7))
             ax = sns.heatmap(corr, cmap="vlag", center=0, square=True, linewidths=.5, annot=True, cbar_kws={"shrink": .5})
