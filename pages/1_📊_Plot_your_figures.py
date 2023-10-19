@@ -19,7 +19,7 @@ import sys
 from qstat import qstat
 import plotly
 import plotly.io as pio
-
+import requests
 
 st.set_page_config(layout="wide")
 st.title('Make plotting flow cytometry data easier than GraphPad!')
@@ -43,8 +43,9 @@ if file is not None:
 else:
     agree = st.checkbox('Give it a try with trial dataset!')
     if agree:
-        wb = openpyxl.load_workbook('https://github.com/Rosetung/Webtool/blob/main/Trial_dataset.xlsx')
-        flow_df = pd.read_excel('https://github.com/Rosetung/Webtool/blob/main/Trial_dataset.xlsx', engine='openpyxl')
+        url = 'https://github.com/Rosetung/Webtool/blob/main/Trial_dataset.xlsx'
+        myfile = requests.get(url)
+        flow_df = pd.read_excel(myfile.content)
     else:
         st.stop()
 
