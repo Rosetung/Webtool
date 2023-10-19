@@ -5,3 +5,4 @@ openpyxl
 qstat
 plotnine
 pingouin
+scikit_posthocs
