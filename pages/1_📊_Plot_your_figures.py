@@ -375,8 +375,9 @@ with tab3:
             fsdf=pd.DataFrame(fsdf)
         with c3:
             st.markdown("Normality test")
-            p = pg.qqplot(fsdf[quant], dist='norm')
-            st.pyplot(ggplot.draw(p))
+            figp = plt.figure(figsize=(8,8))
+            pg.qqplot(fsdf[quant], dist='norm')
+            st.pyplot(figp)
             ddd = shapiro(fsdf[quant])[1]
             st.write("Shapiro p-Value: " + str(ddd))
             if ddd<0.05:
@@ -455,8 +456,9 @@ with tab3:
                         for jj in numbers:
                             dsf=selected_data_df[selected_parameters[jj]]
                             st.write(selected_parameters[jj])
-                            p = pg.qqplot(dsf, dist='norm')
-                            st.pyplot(ggplot.draw(p))
+                            figp = plt.figure(figsize=(8,8))
+                            pg.qqplot(dsf, dist='norm')
+                            st.pyplot(figp)
                             shap1 = scipy.stats.shapiro(dsf)[1]
                             st.write("Shapiro p-Value: " + str(shap1))
                             if shap1<0.05:
@@ -494,8 +496,9 @@ with tab3:
                             for jj in numbers:
                                 dsf=selected_data_df[selected_parameters[jj]]
                                 st.write(selected_parameters[jj])
-                                p = pg.qqplot(dsf, dist='norm')
-                                st.pyplot(ggplot.draw(p))
+                                figp = plt.figure(figsize=(8,8))
+                                pg.qqplot(dsf, dist='norm')
+                                st.pyplot(figp)
                                 shap1 = scipy.stats.shapiro(dsf)[1]
                                 st.write("Shapiro p-Value: " + str(shap1))
                                 if shap1<0.05:
